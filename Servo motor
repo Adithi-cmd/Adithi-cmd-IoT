@@ -1,0 +1,13 @@
+#include <Servo.h>  // Include the Servo library
+Servo myServo;  // Create a Servo object
+void setup() {
+  myServo.attach(9);  // Attach the servo to pin 9
+}
+void loop() {
+  // Turn 180° clockwise
+  myServo.write(180);  // Move to 180 degrees
+  delay(3000);         // Wait for 1 second
+  // Turn 180° counterclockwise
+  myServo.write(0);    // Move back to 0 degrees
+  delay(3000);         // Wait for 1 second
+}
